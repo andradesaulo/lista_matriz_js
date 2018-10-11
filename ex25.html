@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                padding-bottom: 200px;
+            }
+            table{
+                margin-bottom: 20px;
+            }
+            table, td, th{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            td, th{
+                width: 100px;
+                padding: 5px;
+            }
+            table input{
+                width: 100%;
+            }
+            .vis{
+                display: block;
+            }
+            .inv{
+                display: none;
+            }
+        </style>
+        <script src="ex25.js"></script>
+    </head>
+    <body>
+        <section id="cadastroPreco">
+            <h1>Cadastro dos 10 produtos</h1>
+            <form onsubmit="cadastraProdutos();return false;">
+                <ul>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p>  
+                    </li>
+                    <li>
+                        <p>
+                            Produto:<input type="text" required>
+                        </p>
+                        <p>
+                            Preço:<input type="number" step="0.01" required>
+                        </p> 
+                    </li>
+                </ul>
+                <p>
+                    <button type="submit">Cadastrar</button>
+                </p>
+                <p id="msgCadProds"></p>
+            </div>
+        </form>
+        <section id="cadastroEstoque">
+            <h1>Cadastro de estoque de cada armazém</h1>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Estoque</th>
+                        <th>Produto 1</th>
+                        <th>Produto 2</th>
+                        <th>Produto 3</th>
+                        <th>Produto 4</th>
+                        <th>Produto 5</th>
+                        <th>Produto 6</th>
+                        <th>Produto 7</th>
+                        <th>Produto 8</th>
+                        <th>Produto 9</th>
+                        <th>Produto 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Armazém 1</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Armazém 2</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Armazém 3</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Armazém 4</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Armazém 5</td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                        <td><input type="number"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="cadastraEstoque()">Cadastrar</button>
+            <p id="msgCadEst"></p>
+        </section>
+        <section id="info" class="inv">
+            <h1>Informações sobre os estoques dos armazéns</h1>
+            <h2>Quantidade de produtos estocados em cada armazém</h2>
+            <p id="msgProdsEstArm"></p>
+            <h2>Quantidade estocada de cada produto</h2>
+            <p id="msgQuantProdArm"></p>
+            <h2>Preços dos produtos com maior estoque em cada armazém</h2>
+            <p id="msgPrecosMaiorEst"></p>
+            <h2>O produto com menor estoque em um armazém</h2>
+            <p id="msgMenorEst"></p>
+            <h2>Custo de cada armazém</h2>
+            <p id="msgCustosArm"></p>
+        </section>
+    </body>
+</html>
