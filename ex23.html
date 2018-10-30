@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="ex23.js"></script>
+    </head>
+    <body onload="carregaPagina()">
+        <section id="cadastro">
+            <h1>Preencha a matriz</h1>
+            <form onsubmit="preencheMatriz();return false;">
+                <table id="tabela"></table>
+                <p>
+                    <button type="submit">Preencher a matriz</button>
+                </p>
+                <p id="rPreenche"></p>
+            </form>
+        </section>
+        <section id="info">
+            <h1>Informações sobre a matriz</h1>
+            <p>
+                <button onclick="quantPares()">Calcular quantidade de números pares da matriz</button>
+            </p>
+            <p id="rQuantPares"></p>
+            <p>
+                <button onclick="somaImpares()">Calcular a soma dos números ímpares</button>
+            </p>
+            <p id="rSomaImpares"></p>
+            <p>
+                <button onclick="media()">Calcular a média dos números</button>
+            </p>
+            <p id="rMedia"></p>
+        </section>
+    </body>
+</html>
