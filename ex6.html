@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="ex6.js"></script>
+        <style>
+                *{
+                    box-sizing: border-box;
+                }
+                table, td{
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                td{
+                    width: 100px;
+                    height: 50px;
+                }
+                td p{
+                    margin: 0;
+                    text-align: center;
+                }
+                input{
+                    width: 100%;
+                    text-align: center;
+                }
+            </style>
+    </head>
+    <body onload="cria()">
+        <div id="dinamico">
+        </div>
+        <p><button onclick="calcula()">Calcular</button></p>
+        <p id="resultado"></p>
+    </body>
+</html>
