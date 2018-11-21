@@ -4,7 +4,7 @@ const l1 = 4;
 const c1 = 6;
 const l2 = 6;
 const c2 = 4;
-
+var soma = 0;
 function cria(){
     var tabela = "<table>";
     for(var i = 0; i < l1; i++){
