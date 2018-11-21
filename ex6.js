@@ -1,7 +1,7 @@
 var mat = [];
 
-const l = 5;
-const c = 3;
+const l = 20;
+const c = 10;
 
 for(var i=0;i<l;i++){
     mat[i] = [];
